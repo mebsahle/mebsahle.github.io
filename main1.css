@@ -2,7 +2,17 @@
     box-sizing: border-box;
 }
 
+/* .document::after {
+    content: "";
+    clear: both;
+    display: block;
+} */
+
+/* for chrome works out */
 body {
+    /* background-color: rgba(231, 231, 231, 0.6); */
+    /* background-color: darksalmon; */
+    /* background-color: rgb(246, 201, 201); */
     background-color: rgba(246, 201, 201, 0.636);
     color: black;
     margin: 0px;
@@ -13,6 +23,9 @@ body {
 .upper_smoke {
     height: 900px;
     color: black;
+    /* background-color: rgb(36, 0, 0); */
+    /* background-color: rgb(132, 42, 42); */
+    /* background-image: linear-gradient(to left, pink, rgba(0, 0, 255, 0.527)); */
 }
 
 .upper_smoke img {
@@ -32,10 +45,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgb(43, 1, 1); */
+    /* background-color: rgba(43, 1, 1, 0.869); */
+    /* background-color: rgba(246, 201, 201, 0.636); */
     background-color: rgb(246, 201, 201);
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     position: sticky;
     top: 0;
+    /* border: 5px solid #000000; */
 }
 
 ul {
@@ -58,6 +76,8 @@ nav li {
 nav ul li a{
     margin: 30px;
     font-family: Ubuntu;
+    /* color: rgb(80, 80, 80); */
+    /* color: burlywood; */
     font-size: 15px;
     font-weight: 700;
     display: block;
@@ -66,8 +86,10 @@ nav ul li a{
 
 .logo {
     font-family: 'Times New Roman';
+    /* color: rgb(0, 0, 0); */
     font-size: 22px;
     margin: 20px;
+    /* color: burlywood; */
     color: rgb(161, 130, 91);
 }
 
@@ -76,13 +98,19 @@ nav ul li a{
     left: 13%;
     top: 42%;
     transform: translate(-13%, -42%);
+    /* background-color: brown; */
     padding: 20px;
     height: 310px;
     line-height: 0px;
+    /* z-index: -1; */
     width: 470px;
     border-width: 5px;
     border-color: burlywood;
+    border-right-style: ridge;
+    border-bottom-style: inset;
     color: burlywood;
+    /* border-right-width: thin;
+    border-bottom-width: thin; */
 }
 
 .text_container p{
@@ -94,6 +122,7 @@ nav ul li a{
     font-weight: bold;
     font-family: monospace;
     font-style: oblique;
+    /* color: rgb(109, 109, 109); */
     font-size: 30px;
     line-height: 0px;
 }
@@ -101,14 +130,17 @@ nav ul li a{
 .text_container p:nth-child(2){
     font-weight: bold;
     font-family: Ubuntu;
+    /* color: rgb(26, 26, 26); */
     font-size: 60px;
     line-height: 5px;
 }
 
 .text_container p:nth-child(3){
     font-family: monospace;
+    /* color: rgb(64, 62, 62); */
     font-size: 25px;
     line-height: 1.6;
+    /* line-height: 90px; */
     margin-top: 60px;
 }
 
@@ -132,6 +164,7 @@ nav ul li a{
 
 .intern-btn {
     border: 2px solid rgb(55, 54, 54);
+    /* color: rgb(55, 54, 54); */
     cursor: pointer;
 }
 
@@ -175,9 +208,10 @@ nav ul li a{
     text-align: left;
     font-family: monospace;
     background-color: teal;
+    /* margin-top: 500px; */
 }
 
-/* .intern {
+.intern {
     font-family: monospace;
     font-size: 25px; 
     font-style: normal;
@@ -185,7 +219,7 @@ nav ul li a{
     margin-left: 14%;
     color: rgba(15, 15, 15, 0.8);
     line-height: 0.9;
-} */
+}
 
 .btn {
     text-align: center;
@@ -194,11 +228,14 @@ nav ul li a{
 .about {
     justify-content: center;
     margin-top: 1000px;
+    /* height: 560px; */
+    /* background-color: lightsalmon; */
 }
 .about-container {
     width: 70%;
     height: auto;
     background-color: rgb(255, 255, 255);
+    /* background-color: rgb(36, 0, 0); */
     border-radius: 20px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     display: flex;
@@ -216,7 +253,7 @@ nav ul li a{
 .about-text {
     width: 850px;
     padding-left: 2px;
-    font-size: 15px;
+    font-size: 150px;
 }
 
 .about-container img {
@@ -226,13 +263,18 @@ nav ul li a{
 }
 
 .about-text p:nth-child(1) {
+    /* color: rgb(64, 62, 62); */
+    /* color: darksalmon; */
+    /* font-family: monospace; */
     font-family: Ubuntu;
     font-weight: bold;
+    /* font-style: oblique; */
     font-size: 60px;
     line-height: 0px;
 }
 
 .about-text p:nth-child(2) {
+    /* color: rgb(62, 61, 61); */
     font-size: 30px;
     font-family: monospace;
     font-weight: bold;
@@ -241,6 +283,7 @@ nav ul li a{
 
 .about-text p:nth-child(3), 
 .about-text p:nth-child(4) {
+    /* color: rgb(126, 125, 125); */
     font-family: Ubuntu;
     font-size: 28px;
 }
@@ -254,6 +297,7 @@ nav ul li a{
     height: auto;
     justify-content: center;
     line-height: 2.1;
+    /* background-color: darkseagreen; */
 }
 
 .skill {
@@ -271,6 +315,10 @@ nav ul li a{
     height: auto;
     padding: 5px;
     background-color: rgb(0, 0, 0);
+    /* background-color: rgb(43, 1, 1); */
+    /* background-color: rgb(36, 0, 0); */
+    /* color: whitesmoke; */
+    /* color: darksalmon; */
     color: rgb(186, 150, 103);
     margin: 10px;
     border-radius: 15px;
@@ -286,25 +334,18 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     background-color: black;
-    color: rgb(186, 150, 103);
+    /* background-color: rgb(43, 1, 1); */
 }
 
-.contact-me p:nth-child(1) {
+.contact-me p {
+    /* color: rgb(255, 255, 255); */
+    /* color: darksalmon; */
+    /* color: burlywood; */
+    color: rgb(186, 150, 103);
     font-size: 30px;
     font-family: monospace;
     font-weight: bold;
     border-bottom: 2px solid rgb(255, 255, 255);
-}
-
-.intern {
-    font-family: monospace;
-    font-size: 25px; 
-    font-style: normal;
-    /* margin-top: -10%;
-    margin-left: 14%; */
-    /* color: rgba(15, 15, 15, 0.8); */
-    line-height: 0.9;
-    display: none;
 }
 
 .contact-me button {
@@ -312,10 +353,11 @@ nav ul li a{
     height: 40px;
     border: none;
     outline: none;
+    /* background-color: rgb(255, 255, 255); */
     background-color: burlywood;
     font-size: 14px;
     font-weight: bold;
-    cursor: pointer;
+    cursor: default;
 }
 
 .footer {
@@ -324,8 +366,7 @@ nav ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: rgba(246, 201, 201, 0.636); */
-    background-color: whitesmoke;
+    background-color: rgba(231, 231, 231,.6);
     position: relative;
 }
 
@@ -336,10 +377,12 @@ nav ul li a{
 
 .footer p:nth-child(1) {
     font-size: 16px;
+    /* color: rgb(25, 25, 25); */
     line-height: 10px;
 }
 
 .footer p:nth-child(2) {
+    /* color: rgb(126, 125, 125); */
     font-size: 16px;
     width: 600px;
     text-align: center;
@@ -366,6 +409,7 @@ nav ul li a{
 }
 
 .copyright {
+    /* color: rgb(86, 85, 85); */
     font-size: 13px;
     position: absolute;
     left: 50%;
@@ -393,6 +437,7 @@ nav ul li a{
         margin-top: 8%;
     }
     .text_container{
+        /* background-color: rgb(144, 153, 238); */
         padding: 10px;
         line-height: 0px;
      }
@@ -419,26 +464,6 @@ nav ul li a{
     }
     .about-container {
         margin-top: 50%;
-        font-size: small;
-    }
-    .about-text p:nth-child(1) {
-        font-family: Ubuntu;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 0px;
-    }
-    
-    .about-text p:nth-child(2) {
-        font-size: 15px;
-        font-family: monospace;
-        font-weight: bold;
-        line-height: 1px;
-    }
-    
-    .about-text p:nth-child(3), 
-    .about-text p:nth-child(4) {
-        font-family: Ubuntu;
-        font-size: 24px;
     }
 }
 
@@ -469,6 +494,7 @@ nav ul li a{
     }
 
     .text_container{
+       /* background-color: rgb(200, 144, 238); */
        padding: 20px;
        left: 15%;
        top: 35%;
