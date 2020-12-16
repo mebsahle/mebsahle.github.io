@@ -1,4 +1,4 @@
-[
+{"data":[
   {
   "id": 1,
   "author": "apple",
@@ -58,5 +58,5 @@
     "author": "orange",
     "message": "It looks like it wraps exactly as it is supposed to. Lets see what a reply looks like!",
     "timestamp": "new Date().getTime()"
-  }
-  ]
+  }]
+}
