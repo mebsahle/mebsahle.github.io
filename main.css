@@ -1,25 +1,32 @@
 * {
     box-sizing: border-box;
-}
-
-body {
-    background-color: rgba(246, 201, 201, 0.636);
-    color: black;
     margin: 0px;
     padding: 0px;
-    width: auto;
+}
+
+/* .document::after {
+    content: "";
+    clear: both;
+    display: block;
+} */
+
+/* for chrome works out */
+body {
+    /* background-color: rgba(231, 231, 231, 0.6); */
+    background-color: bisque;
+    color: black;
 }
 
 .upper_smoke {
-    height: 900px;
+    height: 950px;
     color: black;
+
 }
 
 .upper_smoke img {
     position: relative;
     margin-left: 50%;
-    margin-top: 2%;
-    z-index: -1;
+    margin-top: -4%;
 }
 
 h3 {
@@ -28,19 +35,13 @@ h3 {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 60px;
-    background-color: rgb(246, 201, 201);
+    background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    position: sticky;
     top: 0;
-}
-
-ul {
-    list-style: none;
-    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+    position: sticky;
 }
 
 a {
@@ -49,40 +50,35 @@ a {
 
 nav ul{
     display: flex;
-}
-
-nav li {
+    list-style: none;
+    overflow: hidden;
     float: right;
 }
 
 nav ul li a{
     margin: 30px;
-    font-family: Ubuntu;
+    font-family: myriad;
+    color: rgb(80, 80, 80);
     font-size: 15px;
     font-weight: 700;
     display: block;
-    color: rgb(161, 130, 91);
 } 
 
 .logo {
-    font-family: 'Times New Roman';
-    font-size: 22px;
-    margin: 20px;
-    color: rgb(161, 130, 91);
+    margin-left: 5%;
+    margin-top: 5px;
+    max-width: 40px;
 }
 
 .text_container{
     position: absolute;
     left: 13%;
-    top: 42%;
-    transform: translate(-13%, -42%);
+    top: 30%;
+    /* transform: translate(-13%, -42%); */
+    /* background-color: brown; */
     padding: 20px;
-    height: 310px;
+    height: auto;
     line-height: 0px;
-    width: 470px;
-    border-width: 5px;
-    border-color: burlywood;
-    color: burlywood;
 }
 
 .text_container p{
@@ -94,6 +90,7 @@ nav ul li a{
     font-weight: bold;
     font-family: monospace;
     font-style: oblique;
+    color: rgb(109, 109, 109);
     font-size: 30px;
     line-height: 0px;
 }
@@ -101,19 +98,22 @@ nav ul li a{
 .text_container p:nth-child(2){
     font-weight: bold;
     font-family: Ubuntu;
+    color: rgb(26, 26, 26);
     font-size: 60px;
     line-height: 5px;
 }
 
 .text_container p:nth-child(3){
     font-family: monospace;
+    color: rgb(64, 62, 62);
     font-size: 25px;
     line-height: 1.6;
+    /* line-height: 90px; */
     margin-top: 60px;
 }
 
 .text_container p:nth-child(4){
-    font-family: Ubuntu;
+    font-family: myriad pro regular;
     color: rgb(64, 62, 62);
     font-size: 25px;
     line-height: 0px;
@@ -132,7 +132,7 @@ nav ul li a{
 
 .intern-btn {
     border: 2px solid rgb(55, 54, 54);
-    cursor: pointer;
+    color: rgb(55, 54, 54);
 }
 
 .down-cv {
@@ -149,15 +149,13 @@ nav ul li a{
     width: 130px;
     height: 42px;
     border-radius: 10px;
-    font-family: monospace;
+    font-family: calibri;
     font-weight: bold;
     font-size: 14px;
     outline: none;
     margin: -20% 10px -200% 10px;
     cursor: pointer;
     line-height: 0px;
-    background-color: burlywood;
-    color: rgb(36, 0, 0);
     /* dark_button */
     /* width: 120px;
     height: 40px;
@@ -168,32 +166,9 @@ nav ul li a{
     background-color: rgb(38, 37, 37);
     cursor: pointer; */
 }
-
-#intern {
-    width: 20%;
-    padding: 20px;
-    text-align: left;
-    font-family: monospace;
-    background-color: teal;
-}
-
-/* .intern {
-    font-family: monospace;
-    font-size: 25px; 
-    font-style: normal;
-    margin-top: -10%;
-    margin-left: 14%;
-    color: rgba(15, 15, 15, 0.8);
-    line-height: 0.9;
-} */
-
-.btn {
-    text-align: center;
-}
-
 .about {
     justify-content: center;
-    margin-top: 1000px;
+    margin-top: 950px;
 }
 .about-container {
     width: 70%;
@@ -208,15 +183,12 @@ nav ul li a{
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
-    z-index: -1;
-    margin-top: 50%;
-    color: rgb(186, 150, 103);
 }
 
 .about-text {
     width: 850px;
     padding-left: 2px;
-    font-size: 15px;
+    font-size: 150px;
 }
 
 .about-container img {
@@ -226,27 +198,27 @@ nav ul li a{
 }
 
 .about-text p:nth-child(1) {
-    font-family: Ubuntu;
+    color: rgb(64, 62, 62);
+    font-family: monospace;
     font-weight: bold;
-    font-size: 60px;
-    line-height: 0px;
+    font-style: oblique;
+    font-size: 54px;
+    line-height: 80px;
 }
 
 .about-text p:nth-child(2) {
-    font-size: 30px;
+    color: rgb(62, 61, 61);
+    font-size: 28px;
     font-family: monospace;
     font-weight: bold;
-    line-height: 1px;
+    line-height: 10px;
 }
 
 .about-text p:nth-child(3), 
 .about-text p:nth-child(4) {
+    color: rgb(126, 125, 125);
     font-family: Ubuntu;
-    font-size: 28px;
-}
-
-.about-text p:nth-child(4) {
-    text-align: center;
+    font-size: 24px;
 }
 
 .skills {
@@ -262,16 +234,19 @@ nav ul li a{
     font-weight: bold;
     font-family: monospace;
     margin-bottom: 0px;
-    color: rgb(36, 0, 0);
+}
+
+ul li {
+    list-style: none;
 }
 
 .languages, .activities, .projects {
     display: block;
-    width: 400px;
+    width: 30%;
     height: auto;
-    padding: 5px;
+    padding: 15px;
     background-color: rgb(0, 0, 0);
-    color: rgb(186, 150, 103);
+    color: whitesmoke;
     margin: 10px;
     border-radius: 15px;
     font-family: monospace;
@@ -280,31 +255,21 @@ nav ul li a{
 
 .contact-me {
     width: 100%;
-    height: 480px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
-    color: rgb(186, 150, 103);
 }
 
-.contact-me p:nth-child(1) {
+.contact-me p {
+    color: rgb(145, 145, 145);
+    margin: 5px;
     font-size: 30px;
     font-family: monospace;
     font-weight: bold;
     border-bottom: 2px solid rgb(255, 255, 255);
-}
-
-.intern {
-    font-family: monospace;
-    font-size: 25px; 
-    font-style: normal;
-    /* margin-top: -10%;
-    margin-left: 14%; */
-    /* color: rgba(15, 15, 15, 0.8); */
-    line-height: 0.9;
-    display: none;
 }
 
 .contact-me button {
@@ -312,36 +277,35 @@ nav ul li a{
     height: 40px;
     border: none;
     outline: none;
-    background-color: burlywood;
+    background-color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: bold;
-    cursor: pointer;
+    cursor: default;
 }
 
 .footer {
-    height: 400px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: rgba(246, 201, 201, 0.636); */
-    background-color: whitesmoke;
+    background-color: rgba(231, 231, 231,.6);
     position: relative;
 }
 
 .footer p {
     font-family: monospace;
-    color: rgb(186, 150, 103);
 }
 
 .footer p:nth-child(1) {
     font-size: 16px;
+    color: rgb(25, 25, 25);
     line-height: 10px;
 }
 
 .footer p:nth-child(2) {
+    color: rgb(126, 125, 125);
     font-size: 16px;
-    width: 600px;
     text-align: center;
 }
 
@@ -366,11 +330,13 @@ nav ul li a{
 }
 
 .copyright {
+    color: rgb(86, 85, 85);
     font-size: 13px;
-    position: absolute;
-    left: 50%;
+    /* position: absolute; */
+    /* left: 50%; */
     bottom: 10px;
-    transform: translateX(-50%);
+    z-index: 9999;
+    width: fit-content;
 }
 
 
@@ -393,6 +359,7 @@ nav ul li a{
         margin-top: 8%;
     }
     .text_container{
+        /* background-color: rgb(144, 153, 238); */
         padding: 10px;
         line-height: 0px;
      }
@@ -417,28 +384,25 @@ nav ul li a{
         height: 21px;
         font-size: 8px;
     }
-    .about-container {
-        margin-top: 50%;
-        font-size: small;
-    }
     .about-text p:nth-child(1) {
-        font-family: Ubuntu;
+        color: rgb(64, 62, 62);
+        font-family: monospace;
         font-weight: bold;
+        font-style: oblique;
         font-size: 40px;
-        line-height: 0px;
+        line-height: 60px;
     }
-    
     .about-text p:nth-child(2) {
-        font-size: 15px;
+        color: rgb(62, 61, 61);
+        font-size: 20px;
         font-family: monospace;
         font-weight: bold;
         line-height: 1px;
     }
-    
-    .about-text p:nth-child(3), 
-    .about-text p:nth-child(4) {
+    .about-text p:nth-child(3), .about-text p:nth-child(4) {
+        color: rgb(126, 125, 125);
         font-family: Ubuntu;
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
@@ -457,6 +421,38 @@ nav ul li a{
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+        /*width: 100px;*/
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        overflow: hidden;
+        float: right;
+        flex: 4;
+        /* margin-right: 5px; */
+    }
+    nav ul li a{
+        /* margin: 10px; */
+        margin: 10px 0px;
+        font-family: myriad;
+        color: rgb(80, 80, 80);
+        font-size: 15px;
+        font-weight: 700px;
+        display: block;
+    } 
+
+    .logo {
+        flex: 1;
+    }
+
     .upper_smoke {
         background-size: 800px 1000px;
     }
@@ -469,7 +465,8 @@ nav ul li a{
     }
 
     .text_container{
-       padding: 20px;
+       /* background-color: rgb(200, 144, 238); */
+       /* padding: 20px; */
        left: 15%;
        top: 35%;
        transform: translate(-15%, -35%);
@@ -481,13 +478,13 @@ nav ul li a{
     }
 
     .text_container p:nth-child(2) {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 0px;
     }
 
     .text_container p:nth-child(3),
     .text_container p:nth-child(4) {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.6;
     }
 
@@ -504,10 +501,32 @@ nav ul li a{
     .about-container {
         height: auto;
         width: 80%;
+        padding: 0px;
     }
 
     .about-container img {
         height: 225px;
+    }
+
+    .about-text p:nth-child(1) {
+        color: rgb(64, 62, 62);
+        font-family: monospace;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .about-text p:nth-child(2) {
+        color: rgb(62, 61, 61);
+        font-size: 18px;
+        font-family: monospace;
+        font-weight: bold;
+        line-height: 1px;
+    }
+    .about-text p:nth-child(3), .about-text p:nth-child(4) {
+        color: rgb(126, 125, 125);
+        font-family: Ubuntu;
+        font-size: 15px;
     }
 
     .skills {
@@ -515,7 +534,8 @@ nav ul li a{
     }
 
     .languages, .activities, .projects{
-        margin: 10px 20% 10px;
+        margin: 10px 10% 10px;
+        width: 80%;
     }
 
     .contact-me {

@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Mebatsion Sahle</title>
+    <title>Personal Website</title>
 </head>
 <body>
     <div class="document">
         <nav>
-            <a href="#" class="logo">MeSa</a>
+            <img src="images/girl_.png" class="logo">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
-        </nav>    
+        </nav>
         <div id="top" class="col-3 upper_smoke">
             <div class="text_container">
                 <p>Hello,</p>
@@ -24,15 +23,10 @@
                 <p>Computer Science Engineering <br> Student</p>
                 
                 <!-- <img src="images/Oops.jpg" alt="me" class="me"> -->
-                <div class="btn">
-                    <button type="button" onclick="yourclick()">Intern Me</button>
-                    <a href="../files/Mebatsion_Sahle.pdf"><button class="down-cv">CV</button></a>
-                </div>
-                
+                <button class="intern-btn">Intern Me</button>
+                <button class="down-cv">CV</button>
             </div>
             <img src="images/girl_.png" alt="photo of girl">
-            
-            
         </div>
         <!-- about section -->
         <div class="about">
@@ -40,6 +34,7 @@
                 <!-- <img src="images/PSX.jpg" alt="photo"> -->
                 <div class="col-6 col-s-9 about-text">
                     <p>About Me</p>
+                    <!-- <br> -->
                     <p>Student</p>
                     <p class="col-9 col-s-12">Hello, My name is Mebatsion Sahle. I'm student at Adama Science and Technology 
                         University(ASTU). I would love to join projects in areas
@@ -82,44 +77,39 @@
                 <p style="text-align: center;">Projects</p>
                 <hr>
                 <ul>
-                    <a style="color: darksalmon;" href="https://github.com/mebsahle/Tutorial-Site/"><li>Student Site</li></a>
+                    <a style="color: whitesmoke;" href="https://github.com/MebatsionSa/Tutorial-Site/"><li>Student Site</li></a>
                 </ul>
             </span>
+
+            <span class="languages">
+                <p style="text-align: center;">Frameworks</p>
+                <hr>
+
+                <ul>
+                    <li>Django</li>
+                    <li>LoopBack.js</li>
+                </ul>
+                <ul>
+                    <li>Vue.js</li>
+                    <li>React.js</li>
+                </ul>
         </div>
 
         <div id="contact" class="contact-me">
             <p>If you have any such project</p>
-            <button type="button" onclick="yourclick()">Contact Me</button>
-            <div id="iintern" class="intern">
-                <!-- <p>Mebatsion Sahle</p>
-                <p">CSE Student</p> -->
-                <p>+251947454308</p>
-            </div>
+            <button>Contact Me</button>
         </div>
-        
 
         <div class="footer">
             <!-- <p id="back-to-top"><a href="#top">Back to Top</a></p> -->
             <div class="social-icons">
-                <a href="https://facebook.com/mebatsion.sahle"><img src="images/fb.jpg" alt="facebook logo"></a>
+                <a href="https://facebook.com/Mebatsion Sahle"><img src="images/fb.jpg" alt="facebook logo"></a>
                 <a href="https://t.me/@MebaGT"><img src="images/logo telegram.svg" alt="telegram logo"></a>
-                <a href="https://github.com/mebsahle"><img src="images/github.png" alt="github icon"></a>
-                <a href="https://www.linkedin.com/in/mebsahle/"><img src="images/logo linkedin.png" alt="gmail logo"></a>
+                <a href="https://github.com/MebatsionSa"><img src="images/github.png" alt="github icon"></a>
+                <a href="https://linkedin.com/Mebatsion Sahle"><img src="images/logo linkedin.png" alt="gmail logo"></a>
             </div>
             <p class="copyright">Copyright by MeSa</p>
         </div>
     </div>
-
-    <script>
-        function yourclick() {
-            var x = document.getElementById("iintern");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-
 </body>
 </html>
